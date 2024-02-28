@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <style>
+      :root {
+        --animate-duration: 20s;
+      }
+    </style>
+    <!-- nav bar -->
+
+    <nav
+      id="navBar"
+      class="flex fixed h-[15vh] z-30 w-full gap-8 p-4 text-white items-center font-mono"
+    >
+      <img class="h-[8vh]" src="Photos & Videos/VR-Logo.png" />
+      <h1>TOPTRACER RANGE</h1>
+      <h1>GOLF LESSONS</h1>
+      <h1>ADVENTURE GOLF</h1>
+      <h1>CAFE</h1>
+      <h1>EVENTS</h1>
+    </nav>
+
+    <!-- cursor -->
+
+    <div
+      id="cursor"
+      class="h-[4vh] w-[2vw] bg-sportGreen rounded-full fixed z-[50]"
+    ></div>
+
+    <!-- cursor background -->
+
+    <div
+      id="cursorBackground"
+      class="h-[20vh] w-[10vw] bg-[#96c11e68] rounded-full fixed blur-md z-[50]"
+    ></div>
+
+    <!-- div for dark shade in video and page 1 for content -->
+
+    <div id="main" class="absolute w-full h-[600vh] bg-black z-10 opacity-60">
+      <div
+        id="page1"
+        class="h-[100vh] text-white relative flex flex-col px-20 justify-center items-center z-10"
+      >
+        <h1 class="text-7xl font-bold mb-6">EAT. DRINK. PLAY</h1>
+        <h2 class="text-3xl font-semibold mb-3">
+          WELCOME TO VIDIT RAJPUROHIT GOLF CLUB!
+        </h2>
+        <p class="text-center w-1/2">
+          VR Golf Club is a Toptracer driving range and crazy golf venue in
+          Jaipur, Rajasthan. Passionate about technology, player development and
+          making golf fun and accessible to everyone.
+        </p>
+      </div>
+
+      <!-- page 2 in black background  -->
+
+      <div id="page2" class="h-[100vh] w-full">
+        <div
+          id="scroller"
+          class="whitespace-nowrap w-full flex overflow-x-auto overflow-y-visible relative z-10"
+          style="scrollbar-width: none"
+        >
+          <div
+            id="scroll"
+            class="scroll whitespace-nowrap inline-block hover:text-sportGreen"
+          >
+            <h4 class="">TOPTRACER RANGE</h4>
+            <h4>GOLF LESSONS</h4>
+            <h4>ADVENTURE GOLF</h4>
+            <h4>CAFÉ</h4>
+            <h4>EVENTS</h4>
+            <h4>TOPTRACER RANGE</h4>
+            <h4>GOLF LESSONS</h4>
+            <h4>ADVENTURE GOLF</h4>
+            <h4>CAFÉ</h4>
+            <h4>EVENTS</h4>
+          </div>
+        </div>
+
+        <!-- about us -->
+
+        <div
+          id="aboutUsDiv"
+          class="h-[40vh] w-full flex justify-between px-16 items-center gap-16 mt-40"
+        >
+          <img
+            class="h-[25vh] w-[14vw] rounded-3xl"
+            src="Photos & Videos/home-about-1.avif"
+          />
+
+          <!-- about us content -->
+
+          <div>
+            <h1 class="text-white text-5xl font-bold w-full text-center mb-12">
+              About Us
+            </h1>
+            <p class="text-white text-center mb-20 leading-7">
+              Home to a 46-bay, multi-tier, floodlit driving range, powered by
+              Toptracer Range technology. Complimented by a practice green and
+              bunker, coffee shop and American Golf Store. There truly is
+              something for everyone as we also boast two outdoor 18-hole
+              dinosaur themed crazy golf courses.
+            </p>
+          </div>
+
+          <!-- img 2 -->
+
+          <img
+            class="h-[25vh] w-[14vw] rounded-2xl"
+            src="Photos & Videos/home-about-2.avif"
+          />
+        </div>
+      </div>
+
+      <!-- page 3  -->
+
+      <div id="page3" class="min-h-[100vh] w-full">
+        <!-- parent div  -->
+        <div id="threeCards" class="flex gap-12 mt-24 px-16">
+          <!-- card 1 -->
+
+          <div
+            id="parentDiv1"
+            class="w-1/3 relative h-[60vh] bg-sportGreen rounded-3xl"
+          >
+            <img
+              class="object-cover h-full rounded-3xl absolute hover:opacity-0 transition-opacity duration-700 ease-out"
+              src="Photos & Videos/golf-playing.jpg"
+            />
+            <div id="cardDiv1" class="p-8 inline-block card1">
+              <h1 class="font-sans text-4xl font-bold mb-8">
+                Professional Instructors
+              </h1>
+              <p>
+                With two epic 18-hole outdoor crazy golf courses plus a café
+                serving delicious treats, whether you’re a big kid or a little
+                kid, there really is something for everyone! The perfect place
+                to enjoy some quality time with the family and get some fresh
+                air!
+              </p>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+
+          <div class="w-1/3 h-[60vh] bg-sportGreen rounded-3xl relative">
+            <img
+              class="object-cover h-full rounded-3xl absolute hover:opacity-0 transition-opacity duration-700 ease-out"
+              src="Photos & Videos/golf-playing2.jpg"
+            />
+
+            <div class="p-8">
+              <h1 class="font-sans text-4xl font-bold mb-8">Racer Range</h1>
+              <p>
+                Looking for somewhere to enjoy quality time with friends and
+                family or simply have some “me” time. Our floodlit 46-bay
+                multi-tier range features market leading technology in Toptracer
+                that everyone can enjoy. Open until late all week, nothing quite
+                beats a chilled evening session on the range with food and
+                drinks
+              </p>
+            </div>
+          </div>
+
+          <div class="w-1/3 h-[60vh] bg-sportGreen rounded-3xl relative">
+            <img
+              class="object-cover h-full rounded-3xl absolute hover:opacity-0 transition-opacity duration-700 ease-out"
+              src="Photos & Videos/golf-playing3.jpg"
+            />
+
+            <div class="p-8">
+              <h1 class="font-sans text-4xl font-bold mb-8">Golf Lessons</h1>
+              <p>
+                Our pros are truly dedicated to your improvement and aim for
+                every student to leave having learnt something and feeling more
+                confident about their golf game.Whether you are beginning your
+                golfing journey or simply looking to improve your game we
+                provide all services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- sign up div  -->
+
+        <div
+          class="w-full h-[30vh] bg-sportGreen mt-40 flex justify-center items-center gap-12"
+        >
+          <img
+            class="w-1/3 h-full object-cover"
+            src="Photos & Videos/dots-side.svg"
+          />
+          <h1 class="font-bold text-2xl text-center">
+            SIGN UP FOR VIDIT GOLF CLUB AND GET SPECIAL OFFER STRAIGHT TO YOUR
+            INBOX
+          </h1>
+          <img
+            class="w-1/3 h-full object-cover"
+            src="Photos & Videos/dots-side-right.svg"
+          />
+        </div>
+
+        <!-- image slider  -->
+
+        <div class="h-[80vh] mt-36 w-full bg-red-600"></div>
+      </div>
+
+      <!-- page4  -->
+
+      <div
+        class="h-[60vh] w-full mt-16 flex items-center justify-center relative"
+      >
+        <img
+          id="colonLeft"
+          class="absolute h-[60px] left-[10%] bottom-[80%]"
+          src="Photos & Videos/quote-left.svg"
+        />
+
+        <p class="text-white font-bold w-[60%] text-3xl">
+          Excellent couple of hours, relax and enjoy in the fun. Staff were
+          accommodating, friendly and very helpful. Café on site for
+          refreshments etc. Will keep children enterntained during the holidays.
+          Worth a visit if you haven’t been.
+        </p>
+
+        <img
+          id="colonRight"
+          class="absolute h-[60px] right-[10%] top-[80%] z-50"
+          src="Photos & Videos/quote-right.svg"
+        />
+      </div>
+
+      <!-- overlapping text  -->
+      <div id="overlappingText" class="px-8 relative top-16">
+        <h1 class="text-7xl font-extrabold z-10">WHAT ARE YOU WAITING FOR ?</h1>
+      </div>
+
+      <div
+        class="w-full h-[50vh] flex justify-evenly px-16 items-center z-20 absolute"
+      >
+        <!-- video 1 -->
+        <div
+          class="w-1/4 h-[35vh] flex justify-center items-center rounded-xl relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            class="h-full object-cover rounded-xl absolute"
+            src="Photos & Videos/aerial_shot_of_golf_course.mp4"
+          ></video>
+          <h1 class="text-white font-bold text-2xl z-10">TOPTRACER RANGE</h1>
+        </div>
+
+        <div
+          class="w-1/4 h-[35vh] flex justify-center items-center rounded-xl relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            class="object-cover h-full rounded-xl absolute"
+            src="Photos & Videos/golf-cart-moving.mp4"
+          ></video>
+          <h1 class="text-white font-bold text-2xl z-10">GOLF LESSONS</h1>
+        </div>
+
+        <div
+          class="w-1/4 h-[35vh] flex justify-center items-center rounded-xl relative transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+        >
+        <video
+        id="thirdVideo"
+        autoplay
+        loop
+        class="object-cover object-right h-full rounded-xl"
+        src="Photos & Videos/resort-interior.mp4"
+        ></video>
+        <h1 class="absolute text-white font-bold text-2xl z-10">
+          ADVENTURE GOLF
+        </h1>
+        </div>
+      </div>
+    </div>
+    <video
+      autoplay
+      loop
+      muted
+      class="h-[100vh] object-cover w-full fixed"
+      src="Photos & Videos/Golf-Video.mp4"
+    ></video>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      let cursor = document.querySelector("#cursor");
+      let cursorBackground = document.querySelector("#cursorBackground");
+      let cardImg1 = document.querySelector("#cardImg1");
+      let cardDiv1 = document.querySelector("#cardDiv1");
+      let parentDiv1 = document.querySelector("#parentDiv1");
+      let navh1 = document.querySelectorAll("#navBar h1");
+      let threeCards = document.querySelector("#threecards");
+
+      console.log(navh1);
+
+      navh1.forEach((h1) => {
+        h1.addEventListener("mouseenter", () => {
+          cursor.style.scale = 3;
+          cursor.style.border = "1px solid white";
+          cursor.style.backgroundColor = "transparent";
+          cursorBackground.style.opacity = "0";
+        });
+        h1.addEventListener("mouseleave", () => {
+          cursor.style.scale = 1;
+          cursor.style.border = "0px solid sportGreen";
+          cursor.style.backgroundColor = "sportGreen";
+          cursorBackground.style.opacity = "1";
+        });
+      });
+      // document.addEventListener("mousemove", (e) => {
+      //   cursor.style.left = e.clientX - 9 + "px";
+      //   cursor.style.top = e.clientY - 6 + "px";
+
+      //   cursorBackground.style.left = e.x - 58 + "px";
+      //   cursorBackground.style.top = e.y - 55 + "px";
+      // });
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + 25 + "px";
+        cursor.style.top = e.clientY + "px";
+
+        cursorBackground.style.left = e.clientX + "px";
+        cursorBackground.style.top = e.clientY + "px";
+      });
+
+      gsap.to("#navBar", {
+        backgroundColor: "black",
+        duration: 0.5,
+        height: "12vh",
+        scrollTrigger: {
+          trigger: "#navBar",
+          scroller: "body",
+          // markers: true,
+          start: "top-10%",
+
+          scrub: 1,
+        },
+      });
+
+      gsap.to("#main", {
+        opacity: "2",
+        scrollTrigger: {
+          trigger: "#main",
+          scroller: "body",
+
+          start: "top-30%",
+          scrub: 1,
+        },
+      });
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.set("#aboutUsDiv", { opacity: 0 });
+      gsap.set("#threeCards", { opacity: 0 });
+
+      gsap.to("#aboutUsDiv", {
+        y: -50,
+        scale: 0.8,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.4,
+        scrollTrigger: {
+          trigger: "#aboutUsDiv",
+          scroller: "body",
+
+          start: "bottom 80%",
+          end: "top 60%",
+          scrub: 3,
+        },
+      });
+
+      gsap.to("#threeCards", {
+        y: -50,
+        scale: 0.8,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: "#threeCards",
+          scroller: "body",
+
+          start: "top 80%",
+          end: "top 60%",
+          scrub: 3,
+        },
+      });
+
+      gsap.from("#colonLeft", {
+        y: -70,
+        x: -70,
+        scrollTrigger: {
+          trigger: "#colonLeft",
+          scroller: "body",
+
+          start: "top 55%",
+          end: "top 45%",
+          scrub: 4,
+        },
+      });
+
+      gsap.from("#colonRight", {
+        y: 70,
+        x: 70,
+        scrollTrigger: {
+          trigger: "#colonLeft",
+          scroller: "body",
+
+          start: "top 55%",
+          end: "top 45%",
+          scrub: 4,
+        },
+      });
+
+      gsap.from("#overlappingText", {
+        y: 70,
+        scrollTrigger: {
+          trigger: "#overlappingText",
+          scroller: "body",
+          
+          start: "top 90%",
+          end: "top 75%",
+          scrub: 2,
+        },
+      });
+
+      let allH4 = document.querySelectorAll("#scroll h4");
+
+      allH4.forEach((h4) => {
+        h4.style.fontSize = "140px";
+        h4.style.fontWeight = "900";
+        h4.style.marginRight = "10px";
+        h4.style.fontFamily = "gilroy";
+        h4.style.display = "inline-block";
+        h4.style.webkitTextStroke = "2px";
+        h4.style.webkitTextStrokeColor = "sportGreen";
+      });
+
+      // increasing video speed bt 2x
+
+      let myVideo = document.querySelector("#thirdVideo");
+
+      myVideo.playbackRate = 2;
+
+      //   allH4.addEventListener("mouseenter", function() {
+      //   h4.style.color = "#95C11E"; // Change text color on hover
+      // });
+
+      // allH4.addEventListener("mouseleave", function() {
+      //   h4.style.color = "transparent"; // Reset text color on mouse leave
+      // });
+
+      // parentDiv1.addEventListener('mouseover' , (e) => {
+      //     if(e != null){
+      //         cardImg1.classList.add('hidden');
+      //         cardDiv1.classList.remove('hidden');
+
+      //      }
+      //     console.log(e);
+
+      // })
+    </script>
+  </body>
+</html>

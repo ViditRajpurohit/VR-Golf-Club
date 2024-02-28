@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+  background: white;
+  color: #95c11e;
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #95c11e;
+  border-radius: 50px;
+}
+
+.scroll {
+  display: flex;
+  animation-name: animate;
+  animation-duration: 30s;
+
+  background-color: transparent;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation: animate; */
+}
+
+#overlappingText {
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* #cursor {
+  z-index: 9999;
+  pointer-events: all;
+}  */
