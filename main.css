@@ -17,17 +17,35 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
-.scroll {
-  display: flex;
+.scroller-in {
+  
   animation-name: animate;
-  animation-duration: 30s;
+  animation-duration: 40s;
 
-  background-color: transparent;
+  /* background-color: transparent; */
 
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   /* animation: animate; */
 }
+
+.scroller-in h4 {
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  font-family: gilroy;
+  margin-right: 20px;
+  transition: all linear 0.3s;
+  color:black;
+  -webkit-text-stroke: 2px #95c11e;
+}
+
+.scroller-in h4:hover{
+  color:#95c11e;
+  -webkit-text-stroke: 2px white;
+}
+
+
 
 #overlappingText {
   -webkit-text-stroke: 2px;
